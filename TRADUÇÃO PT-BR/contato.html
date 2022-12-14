@@ -1,0 +1,56 @@
+<div class="contactus">
+	<section>
+		<div class="content contactus-infos">
+			<div class="flex">
+				<div class="fx_2 box-01">
+					<h3><i class="fas fa-map-marker-alt"></i> Endereço</h3>
+					<p>2051 South Post Road<br>Weston, FL 33327</p>
+					<h3><i class="fas fa-phone"></i> TELÉFONO:</h3>
+					<p>(954) 389-5003</p>
+					<h3><i class="fas fa-fax"></i> FAX:</h3>
+					<p>(954) 389-1228</p>
+					<h3><i class="fas fa-envelope-open-text"></i> E-Mail:</h3>
+					<p><a href="mailto:info@skdrexel.org">info@skdrexel.org</a></p>
+				</div>
+				<div class="fx_2 box-02">
+					<h2 style="text-align: center;"><i style="color: var(--color_pd);" class="fas fa-comment-dots"></i> Faça uma pergunta</h2>
+					<form id="askquestion" class="Floating"  action="library/php/FormDB.php" method="post" onsubmit="return default_validation(this);">
+						<input class="atimo-recaptcha-response" type="hidden" name="g-recaptcha-response" value="">
+						<input type="hidden" name="sys_from" value="no-reply@atimo.us">
+						<input type="hidden" name="sys_to" value="fromar@skdrexel.org">
+						<input type="hidden" name="sys_resp_email"  value="email">
+						<input type="hidden" name="sys_form_name"   value="Ask a Question">
+						<input type="hidden" name="sys_landing_pg"  value="Thank_you">
+						<fieldset>
+							<div class="field" style="margin: 0 0 0.625em;">
+								<input type="text" class="js-required" name="fullname" id="fullname" placeholder=" ">
+								<label for="fullname">Nome: </label>
+							</div>
+							<div class="flex">
+								<div class="field fx_2">
+									<input class="js-required js-phone_us" type="tel" id="phone" name="phone" placeholder=" ">
+									<label for="phone">Telefone:</label>
+								</div>
+								<div class="field fx_2">
+									<input type="email" class="js-required" name="email" id="email" placeholder=" ">
+									<label for="email">Email:</label>
+								</div>
+							</div>
+							<div class="field" style="margin: 0 0 0.625em;">
+								<input type="text" class="js-required" name="Subject" id="Subject" placeholder=" ">
+								<label for="Subject">Assunto:</label>
+							</div>
+							<div class="field" style="margin: 0 0 0.625em;">
+								<--textarea name="txt_message" class="js-required" name="txt_message" id="txt_message" placeholder=" ">
+								<--/textarea>
+								<label for="txt_question">Pergunta:</label>
+							</div>
+						</fieldset>
+						<input name="sys_submit" class="submit" type="submit" value="ENVIAR">
+					</form>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

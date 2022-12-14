@@ -1,0 +1,198 @@
+<section>
+	<div class="content">
+		<div class="quote">
+			<p>"El Señor es justo y bondadoso, nuestro Dios es compasivo; el Señor protege a los sencillos: yo estaba en la miseria y me salvó. Alma mía, recobra la calma, porque el Señor ha sido bueno contigo. El libró mi vida de la muerte, mis ojos de las lágrimas y mis pies de la caída. Yo caminaré en la presencia del Señor, en la tierra de los vivientes."</p>
+			<p class="source">Salmo 116: 5 - 9</p>
+		</div>
+		<div id="section_navigation">
+			<a class="selected" data-section="Funeral_info_SP">INFORMACIÓN GENERAL</a>
+			<a data-section="Funeral_form_SP">SOLICITUD</a>
+			<a data-section="Funeral_readings">Readings</a>
+			<a data-section="Funeral_music">Music</a>
+			<a data-section="Funeral_Offering">Offering</a>
+			
+		</div>
+		<div id="sn_content" class="js-parent">##get_textarea(section_nav,Funeral_info)##</div>
+	</div>
+</section>
+
+<!-- General Information -->
+
+div.lg
+<h2>Gracias por elegir la Iglesia Católica St. Katharine Drexel para orar por la salvación de su ser querido y ayudar a sus familiares y amigos a pasar del dolor a una fe más profunda en la resurrección.</h2>
+<p>A continuación, se detallan los pasos para organizar una Misa de funeral en nuestra iglesia.</p>
+<ol class="flex">
+<div class="fx_2">
+<li><strong>Reserve una fecha:</strong><br>
+    Complete el  <a href="?pg=Funeral&Section=Funeral_form">formulario de solicitud de misa de funeral</a> en línea para iniciar el proceso. Nuestra oficina será notificada de su solicitud mientras lee los otros pasos y comprende las preguntas que le haremos y las cosas que debe hacer ahora y antes de la Misa.</li>
+  <li><strong>Lecturas:</strong><br>
+    Debido a que esta es una misa privada, siempre le damos a nuestras familias la oportunidad de elegir las 2 lecturas para la misa. Valla a <a href="?pg=Funeral&Section=Funeral_readings">Lecturas</a> para seleccionar una lectura del Antiguo Testamento y otra del Nuevo Testamento.</li>
+  <li><strong>Música:</strong><br>
+    Puede coordinar todos los detalles, incluidas las selecciones de canciones, con nuestro director de musica. Los honorarios de los músicos son de $200.</li>
+  <li><strong>Imagen:</strong><br>
+	Puede traer una foto enmarcada de su difunto. Tenemos un caballete o mesa pequeña para poner la foto en el altar.</li>
+	</div> 
+<div class="fx_2">
+  <li><strong>Palabras de honor:</strong><br>
+	Permitimos unas palabras de honor después de la Sagrada Comunión por no más de 5 minutos. Por favor, háganos saber si alguien va a hablar.</li>
+  <li><strong>Donación sugerida:</strong><br>
+    Donación de $300 con tarjeta de crédito (en línea o por teléfono) o cheque a nombre de St. Katharine Drexel.</li>
+	<li><strong>Transmisión en vivo</strong><br>
+		Ofrecemos un servicio de transmisión en vivo por una tarifa de $ 50. Póngase en contacto con Belkis Ferrer para coordinar.</li>
+  <li><strong>Contáctenos:</strong><br>
+	Nuestro Director de Misas Funerales discutirá todos estos detalles con usted y responderá cualquier pregunta que pueda tener. Belkys Ferrer (954) 389-5003 Ext. 213</li>
+</div>
+</ol>
+
+<!-- solicitud -->
+
+
+<form class="default" action="library/php/FormDB.php" method="post">
+	<input class="atimo-recaptcha-response" type="hidden" name="g-recaptcha-response" value="">
+	<input type="hidden" name="sys_from" value="no-reply@atimo.us">
+	<input type="hidden" name="sys_to" value="fromar@skdrexel.org">
+	<!--<input type="hidden" name="sys_tocc" value="renato@atimo.us"> -->
+	<input type="hidden" name="sys_resp_email" value="email">
+	<input type="hidden" name="sys_form_name" value="Funeral_Registration">
+	<input type="hidden" name="sys_landing_pg" value="Thank_you">
+	<fieldset>
+	  <legend>Acerca del difunto</legend>
+	  <input type="hidden" name="#html_h2_1" value="About the deceased">
+	  <label for="deceased">Nombre</label>
+	  <input class="js-required" type="text" name="deceased">
+	  <label for="birth_date">Fecha de nacimiento</label>
+	  <input class="js-required" type="date" name="Birth_Date">
+	  <label for="date_of_death">Fecha de defunción</label>
+	  <input class="js-required" type="date" name="Date_of_Death">
+	  <label for="cause_of_death">Causa de la muerte</label>
+	  <input type="text" name="Cause_of_Death" placeholder="Natural causes, sickness...">
+	  <p>Sobrevivientes: Nombres y relación con el difunto</p>
+	  <--textarea class="js-required" name="survivors" placeholder="Mr. John Doe, Uncle..."><--/textarea>
+	  <label for="parishioner">¿Es usted un parroquiano registrado?</label>
+	  <select name="parishioner" class="js-required">
+		<option value=""></option>
+		<option value="Yes">Si</option>
+		<option value="No">No</option>
+	  </select>
+	</fieldset>
+	<fieldset>
+	  <legend>Dirección residencial del difunto</legend>
+	  <input type="hidden" name="#html_h2_2" value="Residential address of deceased">
+	  <label for="street">Calle</label>
+	  <input class="js-required" type="text" name="street">
+	  <label for="city">Ciudad</label>
+	  <input class="js-required" type="text" name="City">
+	  <label for="state">Estado</label>
+	  <select name="State">
+		<option value=""></option>
+		<option value="AL">AL</option>
+		<option value="AK">AK</option>
+		<option value="AZ">AZ</option>
+		<option value="AR">AR</option>
+		<option value="CA">CA</option>
+		<option value="CO">CO</option>
+		<option value="CT">CT</option>
+		<option value="DE">DE</option>
+		<option value="DC">DC</option>
+		<option value="FL" selected="">FL</option>
+		<option value="GA">GA</option>
+		<option value="HI">HI</option>
+		<option value="ID">ID</option>
+		<option value="IL">IL</option>
+		<option value="IN">IN</option>
+		<option value="IA">IA</option>
+		<option value="KS">KS</option>
+		<option value="KY">KY</option>
+		<option value="LA">LA</option>
+		<option value="ME">ME</option>
+		<option value="MD">MD</option>
+		<option value="MA">MA</option>
+		<option value="MI">MI</option>
+		<option value="MN">MN</option>
+		<option value="MS">MS</option>
+		<option value="MO">MO</option>
+		<option value="MT">MT</option>
+		<option value="NE">NE</option>
+		<option value="NV">NV</option>
+		<option value="NH">NH</option>
+		<option value="NJ">NJ</option>
+		<option value="NM">NM</option>
+		<option value="NY">NY</option>
+		<option value="NC">NC</option>
+		<option value="ND">ND</option>
+		<option value="OH">OH</option>
+		<option value="OK">OK</option>
+		<option value="OR">OR</option>
+		<option value="PA">PA</option>
+		<option value="RI">RI</option>
+		<option value="SC">SC</option>
+		<option value="SD">SD</option>
+		<option value="TN">TN</option>
+		<option value="TX">TX</option>
+		<option value="UT">UT</option>
+		<option value="VT">VT</option>
+		<option value="VA">VA</option>
+		<option value="WA">WA</option>
+		<option value="WV">WV</option>
+		<option value="WI">WI</option>
+		<option value="WY">WY</option>
+	  </select>
+	  <label for="zip">Código Postal</label>
+	  <input class="js-required" type="text" name="zip">
+	</fieldset>
+	<fieldset>
+	  <legend>Acerca del peticionario</legend>
+	  <div class="note">
+		<p>Por favor seleccione dos posible fechas y horas en orden de preferencia. Revisaremos la disponibilidad para esas fechas y le informaremos si podemos hacer la reserva en consecuencia. Cualquiera que sea el resultado, usted será notificado.</p>
+		<p><strong>Horario de funerales:</strong></p>
+		  <ul>
+			<li>Lunes a viernes</li>
+			<li>No hay disponibilidad los sábados or domingos</li>
+		  </ul>
+	  </div>
+	  <label for="mass_date_1">Fecha/Hora tentativa 1</label>
+	  <div>
+		<input class="js-required half" type="date" name="mass_date_1">
+		<input class="js-required half" type="text" name="mass_time_1" placeholder="time">
+	  </div>
+	  <label for="mass_date_2">Fecha/Hora tentativa 2</label>
+	  <div>
+		<input class="js-required half" type="date" name="mass_date_2">
+		<input class="js-required half" type="text" name="mass_time_2" placeholder="time">
+	  </div>
+	  <label for="Mass_Language">Idioma para la Misa </label>
+	  <select name="Mass_Language" class="js-required">
+		<option value=""></option>
+		<option value="English">Inglés</option>
+		<option value="Spanish">Español</option>
+	  </select>
+	  <label for="Presence_of_Deceased">Presencia del difunto </label>
+	  <select name="Presence_of_Deceased" class="js-required">
+		<option value=""></option>
+		<option value="Body Present">Cuerpo presente </option>
+		<option value="Cremated Reamains">Cenizas</option>
+		<option value="Neither">Ninguno</option>
+	  </select>
+		
+	  <label for="livestreamed">¿Quiere la que Misa sea transmitida en línea?</label>
+	  <select name="livestreamed" class="js-required">
+		<option value=""></option>
+		<option value="Yes">Si</option>
+		<option value="No">No</option>
+	  </select>
+	</fieldset>
+	<fieldset>
+	  <legend>Acerca del peticionario(a)</legend>
+	  <input type="hidden" name="#html_h2_2" value="About the petitioner">
+	  <label for="petitioner_name">Nombre</label>
+	  <input class="js-required" type="text" name="petitioner_name">
+	  <label for="petitioner_relation">Relación con el fallecido</label>
+	  <input class="js-required" type="text" name="petitioner_relation">
+	  <label for="phone">Teléfono</label>
+	  <input class="js-required js-phone_us" type="text" name="phone">
+	  <label for="email">Correo Electrónico</label>
+	  <input class="js-required" type="text" name="email">
+	</fieldset>
+	<input name="sys_submit" class="submit" type="submit" value="Submit">
+  </form>
+  

@@ -1,0 +1,63 @@
+<div id="ourteam">
+    <section>
+        <div class="content">
+            
+            <div id="mainline" style="z-index: 900;">
+                <p>Main line: <a href="tel:9543895003">(954) 389-5003</a></p>
+            </div>
+            
+            <h2>Pastoral Team</h2>
+            <div class="flex">
+                <div class="fx_4 js-parent">##get_textarea(our_team,fromar)##</div>
+                <div class="fx_4 js-parent">##get_textarea(our_team,frlondono)##</div>
+            </div>
+
+            <h2>Staff</h2>
+            <div class="flex">
+
+                <div class="fx_4 js-parent">##get_textarea(our_team,veronicar)##</div>
+                <div class="fx_4 js-parent">##get_textarea(our_team,belkisf)##</div>
+                <div class="fx_4 js-parent">##get_textarea(our_team,hedalysa)##</div>
+                <div class="fx_4 js-parent">##get_textarea(our_team,carolinap)##</div>
+                <div class="fx_4 js-parent">##get_textarea(our_team,josuec)##</div>
+                <div class="fx_4 js-parent">##get_textarea(our_team,vladmirv)##</div>
+                <div class="fx_4 js-parent">##get_textarea(our_team,rpeterson)##</div>
+                <div class="fx_4 js-parent">##get_textarea(our_team,masouza)##</div>
+                
+                <!--div class="fx_4">
+                    <dl>
+                        <dt>
+                            <img src="ctm/31000/template/images/miscellaneous/our_team.png" class="imgC">
+                            <a href="?pg=link" class="read-profile"><span>Read bio</span></a>
+                        </dt>
+                        <dd class="OT-name">Name</dd>
+                        <dd class="OT-function">Position</dd>
+                        <dd class="OT-contact">
+                            <a href="mailto:bestface@atimo.us">bestface@atimo.us</a> | <a href="tel:305-373-2808pp101">Ext. 101</a>
+                        </dd>
+                    </dl>   
+                </div-->
+
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+<script type="application/javascript">
+	$(function(){
+		var startScroll = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScroll = window.pageYOffset,
+				position = $("#mainline");
+			if (startScroll > 400) {
+				position.addClass("js-fixposition");
+			} else {
+				position.removeClass("js-fixposition");
+			}
+			startScroll = currentScroll;
+		}
+	});	
+</script>
